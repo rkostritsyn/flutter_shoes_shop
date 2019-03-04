@@ -5,6 +5,7 @@ import 'package:flutter_shoes_shop/ui/screen/account_screen.dart';
 import 'package:flutter_shoes_shop/ui/screen/cart_screen.dart';
 import 'package:flutter_shoes_shop/ui/screen/home_screen.dart';
 import 'package:flutter_shoes_shop/ui/screen/product_list_screen.dart';
+import 'package:flutter_shoes_shop/ui/screen/store_screen.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -13,7 +14,8 @@ class MainScreen extends StatefulWidget {
 
   final List<Widget> navigationItemList = [
     NestedScreenNavigator(HomeScreen()),
-    NestedScreenNavigator(ProductListScreen()),
+    NestedScreenNavigator(ShopScreen()),
+    NestedScreenNavigator(StoreScreen()),
     NestedScreenNavigator(CartScreen()),
     NestedScreenNavigator(AccountScreen()),
   ];
@@ -21,12 +23,12 @@ class MainScreen extends StatefulWidget {
 
 class MainScreenState extends State<MainScreen> {
   int _pageIndex = 0;
-  String title = 'HomePage';
+  String title = 'Home';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text(title),),
       body: IndexedStack(
           index: _pageIndex,
         children: widget.navigationItemList,
@@ -49,18 +51,17 @@ class MainScreenState extends State<MainScreen> {
         return 'Home';
 
       case 1:
-        return 'Product List';
+        return 'Shop';
 
       case 2:
         return 'Stores';
 
       case 3:
-        return 'Accaunt';
+        return 'Card';
 
       default:
         return 'default';
     }
   }
-
 
 }
