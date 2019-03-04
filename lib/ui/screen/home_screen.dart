@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shoes_shop/res/styles.dart';
 
-
+// Utils
+import '../../res/styles.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

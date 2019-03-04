@@ -1,6 +1,11 @@
+// Flutter
 import 'package:flutter/material.dart';
 
+// Utils
 import '../../res/styles.dart';
+
+// Widgets
+import '../widgets/brands_list.dart';
 
 class BrandsScreen extends StatefulWidget {
   @override
@@ -13,10 +18,6 @@ class _BrandsScreenState extends State<BrandsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Brands', style: TextStyles.H1),
-      ),
-    );
+    return Scaffold(body: BrandsList());
   }
 }
