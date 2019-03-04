@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shoes_shop/navigation/nested_navigation.dart';
-import 'package:flutter_shoes_shop/ui/screen/account_screen.dart';
-import 'package:flutter_shoes_shop/ui/screen/cart_screen.dart';
-import 'package:flutter_shoes_shop/ui/screen/home_screen.dart';
-import 'package:flutter_shoes_shop/ui/screen/product_list_screen.dart';
-import 'package:flutter_shoes_shop/ui/screen/store_screen.dart';
+
+import '../../navigation/nested_navigation.dart';
+
+// Screens
+import 'account_screen.dart';
+import 'cart_screen.dart';
+import 'home_screen.dart';
+import 'store_screen.dart';
+import 'brands_screen.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -16,7 +19,7 @@ class MainScreenState extends State<MainScreen> {
 
   final List<_NavigationTab> tabs = [
     _NavigationTab('Home', Icons.home, NestedScreenNavigator(HomeScreen())),
-    _NavigationTab('Shop', Icons.shop, NestedScreenNavigator(ShopScreen())),
+    _NavigationTab('Shop', Icons.shop, NestedScreenNavigator(BrandsScreen())),
     _NavigationTab('Stores', Icons.star_border, NestedScreenNavigator(StoreScreen())),
     _NavigationTab('Card', Icons.shopping_cart, NestedScreenNavigator(CartScreen())),
     _NavigationTab('Account', Icons.supervisor_account, NestedScreenNavigator(AccountScreen())),
