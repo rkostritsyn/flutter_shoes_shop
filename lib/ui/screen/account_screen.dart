@@ -5,7 +5,7 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body:  Center(child: Text('Account', style: styleH1,),)
+        body:  Center(child: Text('Account', style: TextStyles.H1,),)
     );
   }
 }

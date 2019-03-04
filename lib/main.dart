@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shoes_shop/res/thems.dart';
 import 'package:flutter_shoes_shop/ui/screen/main_screen.dart';
 
-void main() => runApp(ShoseShop());
+void main() => runApp(ShoesShop());
 
-class ShoseShop extends StatelessWidget {
+class ShoesShop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
