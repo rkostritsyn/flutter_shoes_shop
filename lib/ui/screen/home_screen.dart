@@ -1,3 +1,4 @@
+// Flutter
 import 'package:flutter/material.dart';
 
 // Utils
@@ -7,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  Center(child: Text('Home', style: TextStyles.H1,),)
+      body:  Center(child: Text('Home', style: TextStyles.h1,),)
     );
   }
 }

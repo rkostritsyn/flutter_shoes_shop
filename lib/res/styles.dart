@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+@immutable
 class TextStyles {
-  static final H1 = TextStyle(fontSize: 28);
+  static final h1 = TextStyle(fontSize: 28);
 }

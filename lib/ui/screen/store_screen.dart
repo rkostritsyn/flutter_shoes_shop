@@ -6,7 +6,7 @@ class StoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body:  Center(child: Text('Store', style: TextStyles.H1,),)
+        body:  Center(child: Text('Store', style: TextStyles.h1,),)
     );
   }
 }
