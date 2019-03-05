@@ -18,6 +18,9 @@ class _BrandsScreenState extends State<BrandsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: BrandsList());
+    return Scaffold(
+        appBar: AppBar(title: Text('Brands title', style: TextStyles.h1)),
+        body: BrandsList()
+    );
   }
 }

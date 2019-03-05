@@ -1,5 +1,7 @@
+// Flutter
 import 'package:flutter/material.dart';
 
+// Navigation
 import '../../navigation/nested_navigation.dart';
 
 // Screens
@@ -27,10 +29,7 @@ class MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    _NavigationTab tab = tabs[_tabIndex];
-
     return Scaffold(
-      appBar: AppBar(title: Text(tab.title),),
       body: IndexedStack(
           index: _tabIndex,
         children: tabs.map((it) => it.widget).toList(),
